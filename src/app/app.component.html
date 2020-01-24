@@ -1,0 +1,19 @@
+
+<div class="container" style="background:#50d07d; width:600px; padding: 20px; height:600px; float:left;">
+<div class="container" align="center" style="background:lightblue; margin-left:25px; padding: 50px; float: left; width:500px; height: 500px;">
+
+<b>Enter the date</b>
+<input type="text" [(ngModel)]="inputDate" class="form-control" style="width:200px;" placeholder="mm-dd-yy">
+<br>
+<input type="radio" name="short" (click)="date1();">Change dateformat to <b>yy-MM-dd</b>
+<br><input type="radio" name="short" (click)="date2();">Change dateformat to <b>dd-MMM-yy</b>
+<br><input type="radio" name="short" (click)="date3();">Change dateformat to <b>EEE-MMM-d-y</b>
+<br><input type="radio" name="short" (click)="date4();"> Change dateformat to <b>EEEE-MMMM-d-y</b>
+
+<br><br><br>
+
+<b>Your Date :-- <p>{{this.date}}</p></b>
+
+
+</div>
+</div>
